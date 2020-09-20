@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My Portfolio</title>
+        <meta name="description" content="This site is a test site." />
+        <link rel="icon" href="images/favicon.png" />
+
+        <link rel="stylesheet" href="styles/loader.css" />
+        <script src="scripts/vendors/pace.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <div id="global-container">
+            <!-- header,content,footer -->
+            <div id="container">
+                <div class="mobile-menu__cover"></div>
+
+                <!-- header -->
+                <header class="header">
+                    <div class="header__inner">
+                        <nav class="header__nav">
+                            <ul class="header__ul appear down">
+                                <li class="header__li item"><a href="#home">Home</a></li>
+                                <li class="header__li item"><a href="#profile">Profile</a></li>
+                                <li class="header__li item"><a href="#about">About</a></li>
+                                <li class="header__li item"><a href="#skills">Skills</a></li>
+                                <li class="header__li item"><a href="#works">Works</a></li>
+                                <li class="header__li item"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <button class="mobile-menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <!-- content -->
+                <div id="content">
+                    <!-- home -->
+                    <section class="home">
+                        <a id="home"></a>
+                        <div class="home__inner appear right">
+                            <div class="home__text item">Hello,</div>
+                            <div class="home__text item">I'm Daichi Ogo.</div>
+                            <div class="home__text item">Welcome to</div>
+                            <div class="home__text item">My Portfolio.</div>
+                        </div>
+                        <div class="hero appear down">
+                            <div class="hero__footer item">
+                                <img class="hero__downarrow" src="images/arrow.svg" />
+                                <span class="hero__scrolltext">scroll</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- profile -->
+                    <section class="profile">
+                        <div class="main-title appear left"><a id="profile" class="anchor item">Profile</a></div>
+                        <div class="profile__inner">
+                            <div class="profile__img appear down">
+                                <img src="images/MyPhoto.png" alt="self-photo" class="item" />
+                            </div>
+                            <div class="profile__description appear down">
+                                <div class="profile__description--name item">Daichi Ogo</div>
+                                <div class="profile__description--work item">Web Developer</div>
+
+                                <div class="profile__description--jp item">
+                                    現在、同志社大学3年生の駆け出しエンジニアです。趣味はテニス、お気に入りの歌手はショーン・メンデスです。「自分への挑戦」をモットーに、クリエイティブに活動しています。
+                                </div>
+                                <div class="profile__description--eg item">
+                                    I am currently a fledgling engineer in my third year at Doshisha University. My hobby is tennis and my favorite singer is Shawn Mendes. My motto is "Challenge Yourself" and I'm very creative.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- about -->
+                    <section class="about">
+                        <div class="main-title appear left"><a id="about" class="anchor item">About Me</a></div>
+                        <div class="about__inner">
+                            <div class="design">
+                                <div class="design__icon appear down">
+                                    <i class="fas fa-palette item"></i>
+                                </div>
+                                <div class="about__description appear up">
+                                    <div class="sub-title item">Design</div>
+                                    <div class="about__description--text item">デザインは人の心を動かす力を持っています。作品に対する自分の想いをデザインすることで、新たな価値を生み出します。</div>
+                                </div>
+                            </div>
+                            <div class="coding">
+                                <div class="coding__icon appear down">
+                                    <i class="fas fa-laptop item"></i>
+                                </div>
+                                <div class="about__description appear up">
+                                    <div class="sub-title item">Coding</div>
+                                    <div class="about__description--text item">オブジェクト指向設計で、プログラムの保守性や再利用性、品質を高めます。本サイトはBEM記法を採用しており、コードの可読性も意識しています。</div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <div class="project__icon appear down">
+                                    <i class="fas fa-pencil-ruler item"></i>
+                                </div>
+                                <div class="about__description appear up">
+                                    <div class="sub-title item">Project</div>
+                                    <div class="about__description--text item">学生プロジェクト団体に所属し、広報やデザイン、イベントの企画・運営等を行ってきました。これからも人々に感動や興奮、喜びを提供していきます。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- skills -->
+                    <section class="skills">
+                        <div class="main-title appear left"><a id="skills" class="anchor item">Skills</a></div>
+                        <div class="skills__inner appear left">
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/html-5.svg" alt="html-icon" />
+                                    <div class="skills__inner--text">HTML5</div>
+                                </div>
+                            </div>
+
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/css-3.svg" alt="css-icon" />
+                                    <div class="skills__inner--text">CSS3</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/sass.svg" alt="sass-icon" />
+                                    <div class="skills__inner--text">Sass</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/javascript.svg" alt="javascript-icon" />
+                                    <div class="skills__inner--text">Javascript</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/vue.svg" alt="vue-icon" />
+                                    <div class="skills__inner--text">Vue.js</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/java.svg" alt="java-icon" />
+                                    <div class="skills__inner--text">Java</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/c.svg" alt="c-icon" />
+                                    <div class="skills__inner--text">C</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/c-plusplus.svg" alt="c-plusplus-icon" />
+                                    <div class="skills__inner--text">C++</div>
+                                </div>
+                            </div>
+
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/gulp.svg" alt="gulp-icon" />
+                                    <div class="skills__inner--text">Gulp</div>
+                                </div>
+                            </div>
+                            <div class="skills__inner--icon item">
+                                <div class="skills__inner--content">
+                                    <img src="images/github-icon.svg" alt="github-icon" />
+                                    <div class="skills__inner--text">Github</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- works -->
+                    <section class="works">
+                        <div class="main-title appear left"><a id="works" class="anchor item">Works</a></div>
+                        <div class="works__inner">
+                            <div class="work">
+                                <div class="work__img appear down"><img src="images/work01.png" alt="myportfolio" class="item" /></div>
+                                <div class="work__text appear left">
+                                    <div class="work__text--title item">My Portfolio</div>
+                                    <div class="work__text--description item">
+                                        本ポートフォリオサイト。自分を表す色である「白」をテーマに作成しました。「白」はどんな色でも合うことから、誰とでも深い信頼関係を築くことができる自分の長所をイメージしました。
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="work">
+                                <div class="work__img appear down"><img src="images/work02.png" alt="kurashiki-pr-site" class="item" /></div>
+                                <div class="work__text appear left">
+                                    <div class="work__text--title item">倉敷市 PRサイト</div>
+                                    <div class="work__text--description item">
+                                        2019年9月、岡山県倉敷市を観光し、倉敷市の魅力に触れました。その魅力を発信したいと思い、作成しました。今後、更に開発を進め、リファクタリングも行っていく予定です。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <div class="work__img appear down"><img src="images/noimage.png" alt="" class="item" /></div>
+                                <div class="work__text appear left">
+                                    <div class="work__text--title item">Coming Soon ...</div>
+                                    <div class="work__text--description item"></div>
+                                </div>
+                            </div>
+                            <div class="work">
+                                <div class="work__img appear down"><img src="images/noimage.png" alt="" class="item" /></div>
+                                <div class="work__text appear left">
+                                    <div class="work__text--title item">Coming Soon ...</div>
+                                    <div class="work__text--description item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- contact -->
+                    <section class="contact">
+                        <div class="main-title appear left"><a id="contact" class="anchor item">Contact</a></div>
+                        <div class="contact__inner appear down">
+                            <div class="contact__twitter item"><i class="fab fa-twitter-square"></i> Twitter</div>
+                        </div>
+                    </section>
+                </div>
+                <!-- footer -->
+                <footer class="footer">
+                    <nav class="footer__nav appear left">
+                        <ul class="footer__ul">
+                            <li class="footer__li item"><a href="#home">Home</a></li>
+                            <li class="footer__li item"><a href="#profile">Profile</a></li>
+                            <li class="footer__li item"><a href="#about">About</a></li>
+                            <li class="footer__li item"><a href="#skills">Skills</a></li>
+                            <li class="footer__li item"><a href="#works">Works</a></li>
+                            <li class="footer__li item"><a href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="footer__copyright item">&copy; Daichi Ogo All Rights Reserved.</div>
+                    </nav>
+                </footer>
+            </div>
+
+            <nav class="mobile-menu">
+                <ul class="mobile-menu__main">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#home">Home</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#profile"> Profile </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#about"> About Me </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#skills"> Skills </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#works"> Works </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#contact"> Contact </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <script src="scripts/vendors/swiper.min.js"></script> -->
+        <!-- <script src="scripts/vendors/TweenMax.min.js"></script> -->
+        <!-- <script src="scripts/vendors/smooth-scroll.polyfills.min.js"></script> -->
+        <script src="scripts/libs/smooth-scroll.js"></script>
+        <script src="scripts/vendors/scroll-polyfill.js"></script>
+        <script src="scripts/libs/scroll.js"></script>
+        <!-- <script src="scripts/libs/text-animation.js"></script> -->
+        <!-- <script src="scripts/libs/hero-slider.js"></script> -->
+
+        <script src="scripts/libs/mobile-menu.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
