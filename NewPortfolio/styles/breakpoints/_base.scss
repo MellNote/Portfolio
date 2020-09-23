@@ -4,16 +4,18 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-    font-family: "Nunito", sans-serif;
     font-family: "Sawarabi Gothic", sans-serif;
 }
+
+#global-container {
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     vertical-align: bottom;
 }
-// html {
-//     scroll-behavior: smooth;
-// }
+
 a {
     color: $cBlack;
     text-decoration: none;
@@ -23,8 +25,8 @@ a {
     }
     &.anchor {
         display: block;
-        padding-top: 30px;
-        margin-top: -30px;
+        padding-top: 130px;
+        margin-top: -130px;
     }
 }
 
@@ -67,15 +69,16 @@ a {
 
 .main-title {
     //@extend .font-lg;
-    font-size: 35px;
-    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
     margin-bottom: 50px;
     display: block;
 }
 
 .sub-title {
     @extend .font-lg;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 10px;
     color: $cSubTitle;
     text-align: center;
@@ -164,11 +167,6 @@ main {
         }
     }
 
-    // & .logo {
-    //     font-size: 38px;
-    //     justify-content: center;
-    // }
-
     &__inner {
         display: flex;
         justify-content: flex-end;
@@ -180,11 +178,13 @@ main {
 }
 
 .home {
+    font-family: "Raleway", sans-serif;
     @extend .content-width;
     @extend .mb-lg;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
+    color: $cBlack;
 
     &__inner {
         position: absolute;
@@ -255,13 +255,11 @@ main {
 .profile {
     @extend .content-width;
     @extend .mb-lg;
-    //padding: 40px;
 
     &__inner {
         padding: 50px;
         border-radius: 20px;
-        //text-align: center;
-        //padding-bottom: 10%;
+
         @extend .boxshadow;
     }
 
@@ -272,19 +270,20 @@ main {
 
     &__description {
         &--name {
+            font-family: "PT Sans", sans-serif;
             font-size: 30px;
-            letter-spacing: -1px;
+
             text-align: center;
         }
         &--work {
-            color: gray;
+            color: $cSubTitle;
             font-size: 20px;
             text-align: center;
         }
         &--jp {
             margin: 10% 0;
         }
-        &--eg {
+        &--en {
             margin: 10% 0;
             font-size: 20px;
         }
@@ -300,8 +299,6 @@ main {
         width: 250px;
     }
     &__inner {
-        //text-align: center;
-
         & .fas {
             font-size: 100px;
             padding: 20%;
@@ -321,11 +318,29 @@ main {
             }
         }
         & .project {
+            @extend .mb-lg;
             &__icon {
                 @extend .icon-base;
                 @extend .mb-sm;
             }
         }
+        & .management {
+            @extend .mb-lg;
+            &__icon {
+                @extend .icon-base;
+                @extend .mb-sm;
+            }
+        }
+        & .teamwork {
+            &__icon {
+                @extend .icon-base;
+                @extend .mb-sm;
+            }
+        }
+    }
+
+    & .main-title {
+        text-align: right;
     }
 }
 
@@ -364,22 +379,45 @@ main {
     @extend .content-width;
     @extend .mb-lg;
 
-    // &__inner {
-    //      @extend .flex;
-    //      margin: 0 auto;
-    // }
-
     & .work {
         margin: 0 auto;
         @extend .boxshadow;
         @extend .mb-md;
         border-radius: 20px;
-        padding: 40px;
-        //width: px;
+
+        &__inner {
+            position: relative;
+            height: 100%;
+            padding: 40px;
+        }
 
         &__img {
             box-shadow: inset 0 0 10px #888888;
             border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                & img {
+                    transform: translateY(100%);
+                }
+                .view {
+                    transform: translateY(0);
+                }
+            }
+            .view {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(-100%);
+                transition: all 800ms ease 0s;
+                transition-delay: 200ms;
+                font-size: 30px;
+            }
         }
 
         & img {
@@ -390,16 +428,39 @@ main {
 
         &__text {
             margin-top: 10%;
+            margin-bottom: 5%;
             &--title {
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: 500;
                 margin-bottom: 5%;
             }
             &--description {
-                font-size: 15px;
-                margin-top: 10px 0;
+                font-size: 20px;
+                margin-top: 10px;
+                padding-bottom: 20px;
+            }
+            &--process {
+                position: absolute;
+                font-size: 20px;
+                bottom: 0;
+                right: 0;
+                padding: 40px;
+                color: $cSubTitle;
+
+                & a {
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        color: $cBlue;
+                        text-shadow: 0 0 7px $cNavyBlue;
+                    }
+                }
             }
         }
+    }
+
+    & .main-title {
+        text-align: right;
     }
 }
 
@@ -412,8 +473,9 @@ main {
         border-radius: 50px;
         text-align: center;
         padding: 20px;
-        margin: 0 30px;
+        margin: 30px;
         transition: all 0.2s ease-in-out;
+        cursor: pointer;
 
         &:hover {
             @extend .btn-hover;
@@ -424,9 +486,16 @@ main {
     }
     &__twitter {
         font-size: 25px;
+
+        & .fab {
+            color: #00acee;
+        }
     }
-    & .fab {
-        color: #00acee;
+    &__github {
+        font-size: 25px;
+        & .fab {
+            color: $cBlack;
+        }
     }
 }
 
@@ -464,5 +533,6 @@ main {
 
     &__copyright {
         margin-top: 20px;
+        color: $cSubTitle;
     }
 }

@@ -3,11 +3,15 @@
 @import "modules/appear";
 // @import "modules/button";
 // @import "modules/hero-slider";
-// @import "modules/text-animation";
+@import "modules/text-animation";
 // @import "modules/image-slide";
 @import "modules/mobile-menu";
 
 @import "breakpoints/base";
+
+@media (max-width: 350px) {
+    @import "breakpoints/350down";
+}
 
 @media (min-width: 480px) {
     @import "breakpoints/480up";

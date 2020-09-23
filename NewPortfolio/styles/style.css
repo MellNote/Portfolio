@@ -81,8 +81,222 @@
           transition-delay: 1s;
 }
 
+.animate-title,
+.tween-animate-title {
+  opacity: 0;
+}
+
+.animate-title.inview,
+.tween-animate-title.inview {
+  opacity: 1;
+}
+
+.animate-title.inview .char,
+.tween-animate-title.inview .char {
+  display: inline-block;
+}
+
+.animate-title .char,
+.tween-animate-title .char {
+  opacity: 0;
+}
+
+.tween-animate-title.inview .char {
+  -webkit-animation-name: kf-animate-chars;
+          animation-name: kf-animate-chars;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.tween-animate-title.inview .char:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+.tween-animate-title.inview .char:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.tween-animate-title.inview .char:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+.tween-animate-title.inview .char:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.tween-animate-title.inview .char:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.tween-animate-title.inview .char:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.tween-animate-title.inview .char:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.tween-animate-title.inview .char:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.tween-animate-title.inview .char:nth-child(9) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+.tween-animate-title.inview .char:nth-child(10) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.tween-animate-title.inview .char:nth-child(11) {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.tween-animate-title.inview .char:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.tween-animate-title.inview .char:nth-child(13) {
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+}
+
+.tween-animate-title.inview .char:nth-child(14) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.tween-animate-title.inview .char:nth-child(15) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.tween-animate-title.inview .char:nth-child(16) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.tween-animate-title.inview .char:nth-child(17) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+.tween-animate-title.inview .char:nth-child(18) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.tween-animate-title.inview .char:nth-child(19) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+}
+
+.tween-animate-title.inview .char:nth-child(20) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.tween-animate-title.inview .char:nth-child(21) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+
+.tween-animate-title.inview .char:nth-child(22) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.tween-animate-title.inview .char:nth-child(23) {
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+}
+
+.tween-animate-title.inview .char:nth-child(24) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.tween-animate-title.inview .char:nth-child(25) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.tween-animate-title.inview .char:nth-child(26) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.tween-animate-title.inview .char:nth-child(27) {
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
+}
+
+.tween-animate-title.inview .char:nth-child(28) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.tween-animate-title.inview .char:nth-child(29) {
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
+}
+
+.tween-animate-title.inview .char:nth-child(30) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes kf-animate-chars {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .mobile-menu {
   position: fixed;
+  font-family: "Lato", sans-serif;
   right: 0;
   top: 60px;
   width: 300px;
@@ -161,9 +375,9 @@
 
 .mobile-menu__link {
   display: block;
-  margin-top: 30px;
+  margin-top: 25px;
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: none !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -253,8 +467,11 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 body {
-  font-family: "Nunito", sans-serif;
   font-family: "Sawarabi Gothic", sans-serif;
+}
+
+#global-container {
+  overflow: hidden;
 }
 
 img {
@@ -274,8 +491,8 @@ a:hover {
 
 a.anchor {
   display: block;
-  padding-top: 30px;
-  margin-top: -30px;
+  padding-top: 130px;
+  margin-top: -130px;
 }
 
 .font-sm {
@@ -294,7 +511,7 @@ a.anchor {
   font-size: 25px;
 }
 
-.mb-sm, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon {
+.mb-sm, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon, .about__inner .management__icon, .about__inner .teamwork__icon {
   margin-bottom: 16px !important;
 }
 
@@ -302,7 +519,7 @@ a.anchor {
   margin-bottom: 50px !important;
 }
 
-.mb-lg, .home, .profile, .about, .about__inner .design, .about__inner .coding, .skills, .works {
+.mb-lg, .home, .profile, .about, .about__inner .design, .about__inner .coding, .about__inner .project, .about__inner .management, .skills, .works {
   margin-bottom: 80px !important;
 }
 
@@ -331,25 +548,26 @@ a.anchor {
 }
 
 .main-title {
-  font-size: 35px;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
   margin-bottom: 50px;
   display: block;
 }
 
 .sub-title {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #535353;
   text-align: center;
 }
 
-.boxshadow, .mobile-menu__btn, .icon-base, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon, .profile__inner, .skills__inner--icon, .works .work, .contact__inner {
+.boxshadow, .mobile-menu__btn, .icon-base, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon, .about__inner .management__icon, .about__inner .teamwork__icon, .profile__inner, .skills__inner--icon, .works .work, .contact__inner {
   -webkit-box-shadow: -4px -4px 7px #f9f9f9, 4px 4px 7px #ccc;
           box-shadow: -4px -4px 7px #f9f9f9, 4px 4px 7px #ccc;
 }
 
-.icon-base, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon {
+.icon-base, .about__inner .design__icon, .about__inner .coding__icon, .about__inner .project__icon, .about__inner .management__icon, .about__inner .teamwork__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,9 +683,11 @@ main {
 }
 
 .home {
-  width: 100vw;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
   height: 100vh;
   position: relative;
+  color: black;
 }
 
 .home__inner {
@@ -568,13 +788,13 @@ main {
 }
 
 .profile__description--name {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
-  letter-spacing: -1px;
   text-align: center;
 }
 
 .profile__description--work {
-  color: gray;
+  color: #535353;
   font-size: 20px;
   text-align: center;
 }
@@ -583,7 +803,7 @@ main {
   margin: 10% 0;
 }
 
-.profile__description--eg {
+.profile__description--en {
   margin: 10% 0;
   font-size: 20px;
 }
@@ -596,6 +816,10 @@ main {
 .about__inner .fas {
   font-size: 100px;
   padding: 20%;
+}
+
+.about .main-title {
+  text-align: right;
 }
 
 .skills__inner {
@@ -637,6 +861,11 @@ main {
 .works .work {
   margin: 0 auto;
   border-radius: 20px;
+}
+
+.works .work__inner {
+  position: relative;
+  height: 100%;
   padding: 40px;
 }
 
@@ -644,6 +873,41 @@ main {
   -webkit-box-shadow: inset 0 0 10px #888888;
           box-shadow: inset 0 0 10px #888888;
   border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.works .work__img:hover img {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.works .work__img:hover .view {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.works .work__img .view {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 800ms ease 0s;
+  transition: all 800ms ease 0s;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+  font-size: 30px;
 }
 
 .works .work img {
@@ -654,34 +918,69 @@ main {
 
 .works .work__text {
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .works .work__text--title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 5%;
 }
 
 .works .work__text--description {
-  font-size: 15px;
-  margin-top: 10px 0;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.works .work__text--process {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  color: #535353;
+}
+
+.works .work__text--process a {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.works .work__text--process a:hover {
+  color: #2dd9fe;
+  text-shadow: 0 0 7px #00a3d5;
+}
+
+.works .main-title {
+  text-align: right;
 }
 
 .contact__inner {
   border-radius: 50px;
   text-align: center;
   padding: 20px;
-  margin: 0 30px;
+  margin: 30px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .contact__twitter {
   font-size: 25px;
 }
 
-.contact .fab {
+.contact__twitter .fab {
   color: #00acee;
+}
+
+.contact__github {
+  font-size: 25px;
+}
+
+.contact__github .fab {
+  color: black;
 }
 
 .footer__nav {
@@ -719,6 +1018,21 @@ main {
 
 .footer__copyright {
   margin-top: 20px;
+  color: #535353;
+}
+
+@media (max-width: 350px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+  .home__text {
+    font-size: 20px;
+  }
+  .works .work__text--description {
+    padding-bottom: 25px;
+  }
 }
 
 @media (min-width: 480px) {
@@ -737,21 +1051,19 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     font-size: 30px;
   }
   .home__text {
-    font-size: 30px;
+    font-size: 35px;
   }
   .profile__description--name {
     font-size: 40px;
-    letter-spacing: -1px;
   }
   .profile__description--work {
-    color: gray;
     font-size: 25px;
   }
   .profile__description--jp {
     font-size: 17px;
     margin: 5% 10%;
   }
-  .profile__description--eg {
+  .profile__description--en {
     font-size: 17px;
     margin: 5% 10%;
     font-size: 20px;
@@ -766,16 +1078,24 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
   .works .work__text--description {
     font-size: 20px;
   }
+  .works .work__text--process {
+    font-size: 20px;
+  }
   .footer__li {
     font-size: 20px;
   }
 }
 
 @media (min-width: 960px) {
+  .about-width, .about__description, .about__inner .design, .about__inner .coding, .about__inner .project, .about__inner .management, .about__inner .teamwork {
+    margin-bottom: 0 !important;
+    width: 280px;
+    margin: 30px;
+  }
   a.anchor {
     display: block;
-    padding-top: 130px;
-    margin-top: -130px;
+    padding-top: 140px;
+    margin-top: -140px;
   }
   .header {
     background: #fffffff0;
@@ -807,37 +1127,21 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     margin: auto;
     width: 50%;
   }
-  .about {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .about__description {
     margin: 0 auto;
-    width: 250px;
   }
   .about__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .about__inner .fas {
     font-size: 100px;
     padding: 20%;
-  }
-  .about__inner .design {
-    width: 250px;
-    margin-bottom: 0 !important;
-  }
-  .about__inner .coding {
-    width: 250px;
-    margin-bottom: 0 !important;
-  }
-  .about__inner .project {
-    width: 250px;
-    margin-bottom: 0 !important;
   }
   .works__inner {
     display: -webkit-box;
@@ -853,7 +1157,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
   }
   .works .work__text--title {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 500;
   }
   .works .work__text--description {
     font-size: 20px;
@@ -902,15 +1206,6 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: Retinaディスプレイで適用
 
 ******************************************************************/
-  /* 
-
-EXAMPLE 
-.icon {
-	background: url(images/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-*/
 }
 
 @media print {
