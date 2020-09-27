@@ -22,15 +22,17 @@
     &__description {
         &--name {
             font-size: 40px;
+            //letter-spacing: -1px;
         }
         &--work {
+            color: gray;
             font-size: 25px;
         }
         &--jp {
             font-size: 17px;
             margin: 5% 10%;
         }
-        &--en {
+        &--eg {
             font-size: 17px;
             margin: 5% 10%;
             font-size: 20px;
@@ -47,14 +49,15 @@
 .works {
     .work {
         &__text {
+            //margin-top: 10%;
             &--title {
                 font-size: 30px;
+
+                //margin-bottom: 5%;
             }
             &--description {
                 font-size: 20px;
-            }
-            &--process {
-                font-size: 20px;
+                //margin-top: 10px 0;
             }
         }
     }
@@ -65,3 +68,51 @@
         font-size: 20px;
     }
 }
+
+// .flex {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+// }
+
+// .houses {
+//     &__item {
+//         flex-basis: 50%;
+//         margin-bottom: 60px;
+//     }
+// }
+
+// .popular {
+//     &__container {
+//         justify-content: space-between;
+//     }
+
+//     &__item {
+//         flex-basis: 47%;
+//     }
+// }
+
+// .travel {
+//     &__inner {
+//         padding: 50px;
+//     }
+//     &__texts,
+//     &__img {
+//         flex-basis: 47%;
+//     }
+
+//     &__texts {
+//         display: flex;
+//         align-items: flex-end;
+//     }
+// }
+
+// .footer {
+//     & .logo {
+//         justify-content: flex-start;
+//     }
+
+//     &__li {
+//         margin-left: 0;
+//         margin-right: 30px;
+//     }
+// }

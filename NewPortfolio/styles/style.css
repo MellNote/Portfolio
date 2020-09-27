@@ -794,7 +794,7 @@ main {
 }
 
 .profile__description--work {
-  color: #535353;
+  color: #ccc;
   font-size: 20px;
   text-align: center;
 }
@@ -803,7 +803,7 @@ main {
   margin: 10% 0;
 }
 
-.profile__description--en {
+.profile__description--eg {
   margin: 10% 0;
   font-size: 20px;
 }
@@ -861,11 +861,6 @@ main {
 .works .work {
   margin: 0 auto;
   border-radius: 20px;
-}
-
-.works .work__inner {
-  position: relative;
-  height: 100%;
   padding: 40px;
 }
 
@@ -874,40 +869,11 @@ main {
           box-shadow: inset 0 0 10px #888888;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
-  position: relative;
 }
 
 .works .work__img:hover img {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-.works .work__img:hover .view {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.works .work__img .view {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 800ms ease 0s;
-  transition: all 800ms ease 0s;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
-  font-size: 30px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .works .work img {
@@ -918,39 +884,17 @@ main {
 
 .works .work__text {
   margin-top: 10%;
-  margin-bottom: 5%;
 }
 
 .works .work__text--title {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 5%;
 }
 
 .works .work__text--description {
-  font-size: 20px;
-  margin-top: 10px;
-  padding-bottom: 20px;
-}
-
-.works .work__text--process {
-  position: absolute;
-  font-size: 20px;
-  bottom: 0;
-  right: 0;
-  padding: 40px;
-  color: #535353;
-}
-
-.works .work__text--process a {
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.works .work__text--process a:hover {
-  color: #2dd9fe;
-  text-shadow: 0 0 7px #00a3d5;
+  font-size: 15px;
+  margin-top: 10px 0;
 }
 
 .works .main-title {
@@ -964,7 +908,6 @@ main {
   margin: 30px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 .contact__twitter {
@@ -1018,7 +961,6 @@ main {
 
 .footer__copyright {
   margin-top: 20px;
-  color: #535353;
 }
 
 @media (max-width: 350px) {
@@ -1029,9 +971,6 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 ******************************************************************/
   .home__text {
     font-size: 20px;
-  }
-  .works .work__text--description {
-    padding-bottom: 25px;
   }
 }
 
@@ -1057,13 +996,14 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     font-size: 40px;
   }
   .profile__description--work {
+    color: gray;
     font-size: 25px;
   }
   .profile__description--jp {
     font-size: 17px;
     margin: 5% 10%;
   }
-  .profile__description--en {
+  .profile__description--eg {
     font-size: 17px;
     margin: 5% 10%;
     font-size: 20px;
@@ -1076,9 +1016,6 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     font-size: 30px;
   }
   .works .work__text--description {
-    font-size: 20px;
-  }
-  .works .work__text--process {
     font-size: 20px;
   }
   .footer__li {
@@ -1206,6 +1143,15 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: Retinaディスプレイで適用
 
 ******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
 }
 
 @media print {
