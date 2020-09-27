@@ -493,6 +493,7 @@ a.anchor {
   display: block;
   padding-top: 130px;
   margin-top: -130px;
+  color: black !important;
 }
 
 .font-sm {
@@ -558,7 +559,7 @@ a.anchor {
 .sub-title {
   font-weight: 500;
   margin-bottom: 10px;
-  color: #535353;
+  color: black;
   text-align: center;
 }
 
@@ -790,20 +791,23 @@ main {
 .profile__description--name {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  color: black;
   text-align: center;
 }
 
 .profile__description--work {
-  color: #ccc;
+  color: #888888;
   font-size: 20px;
   text-align: center;
 }
 
 .profile__description--jp {
+  color: #111111;
   margin: 10% 0;
 }
 
-.profile__description--eg {
+.profile__description--en {
+  color: #111111;
   margin: 10% 0;
   font-size: 20px;
 }
@@ -813,9 +817,14 @@ main {
   width: 250px;
 }
 
+.about__description--text {
+  color: #111111;
+}
+
 .about__inner .fas {
   font-size: 100px;
   padding: 20%;
+  color: #112344;
 }
 
 .about .main-title {
@@ -861,6 +870,11 @@ main {
 .works .work {
   margin: 0 auto;
   border-radius: 20px;
+}
+
+.works .work__inner {
+  position: relative;
+  height: 100%;
   padding: 40px;
 }
 
@@ -869,32 +883,85 @@ main {
           box-shadow: inset 0 0 10px #888888;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
 }
 
 .works .work__img:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.works .work__img:hover .view {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.works .work__img .view {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 800ms ease 0s;
+  transition: all 800ms ease 0s;
+  font-size: 30px;
 }
 
 .works .work img {
   position: relative;
   z-index: -10;
   border-radius: 10px;
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
 }
 
 .works .work__text {
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .works .work__text--title {
-  font-size: 20px;
+  color: black;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 5%;
 }
 
 .works .work__text--description {
-  font-size: 15px;
-  margin-top: 10px 0;
+  color: #111111;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.works .work__text--process {
+  position: absolute;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  color: #888888;
+}
+
+.works .work__text--process a {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.works .work__text--process a:hover {
+  color: #2dd9fe;
+  text-shadow: 0 0 7px #00a3d5;
 }
 
 .works .main-title {
@@ -908,6 +975,7 @@ main {
   margin: 30px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .contact__twitter {
@@ -949,7 +1017,7 @@ main {
 
 .footer__li > a {
   text-decoration: none !important;
-  color: #535353;
+  color: #111111;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -961,6 +1029,7 @@ main {
 
 .footer__copyright {
   margin-top: 20px;
+  color: #111111;
 }
 
 @media (max-width: 350px) {
@@ -971,6 +1040,9 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 ******************************************************************/
   .home__text {
     font-size: 20px;
+  }
+  .works .work__text--description {
+    padding-bottom: 25px;
   }
 }
 
@@ -996,14 +1068,13 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     font-size: 40px;
   }
   .profile__description--work {
-    color: gray;
     font-size: 25px;
   }
   .profile__description--jp {
     font-size: 17px;
     margin: 5% 10%;
   }
-  .profile__description--eg {
+  .profile__description--en {
     font-size: 17px;
     margin: 5% 10%;
     font-size: 20px;
@@ -1016,6 +1087,9 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     font-size: 30px;
   }
   .works .work__text--description {
+    font-size: 20px;
+  }
+  .works .work__text--process {
     font-size: 20px;
   }
   .footer__li {
@@ -1143,15 +1217,6 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: Retinaディスプレイで適用
 
 ******************************************************************/
-  /* 
-
-EXAMPLE 
-.icon {
-	background: url(images/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-*/
 }
 
 @media print {

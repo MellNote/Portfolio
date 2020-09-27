@@ -4,11 +4,6 @@
 
 // ******************************************************************/
 
-// .flex {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-// }
-
 .about-width {
     margin-bottom: 0 !important;
     width: 280px;
@@ -43,7 +38,7 @@ a.anchor {
     &__inner {
         display: flex;
         margin: 0;
-        //padding-bottom: 0;
+
         max-width: $contentMaxWidth;
     }
     &__description {
@@ -52,45 +47,12 @@ a.anchor {
         margin: auto;
     }
     &__img {
-        //left: 0;
         margin: auto;
         width: 50%;
     }
 }
 
-// .profile {
-//     &__inner {
-//         width: 650px;
-//         margin: 0 auto;
-//         padding-bottom: 5%;
-//     }
-
-//     &__description {
-//         &--name {
-//             font-size: 40px;
-//             letter-spacing: -1px;
-//             text-align: center;
-//         }
-//         &--work {
-//             color: gray;
-//             font-size: 25px;
-//             text-align: center;
-//         }
-//         &--jp {
-//             font-size: 20px;
-//             margin: 5% 10%;
-//         }
-//         &--eg {
-//             font-size: 20px;
-//             margin: 5% 10%;
-//             font-size: 20px;
-//         }
-//     }
-// }
-
 .about {
-    //flex-wrap: wrap;
-
     &__description {
         margin: 0 auto;
         @extend .about-width;
@@ -107,35 +69,23 @@ a.anchor {
         }
         & .design {
             @extend .about-width;
-            //margin-bottom: 50px !important;
         }
         & .coding {
             @extend .about-width;
-            // margin-bottom: 50px !important;
         }
         & .project {
             @extend .about-width;
-            //margin-bottom: 50px !important;
         }
         & .management {
             @extend .about-width;
-            // margin-bottom: 50px !important;
         }
         & .teamwork {
             @extend .about-width;
-            // margin-bottom: 0 !important;
         }
     }
 }
 
 .works {
-    // @extend .content-width;
-    // @extend .mb-lg;
-
-    // &__inner {
-    //      @extend .flex;
-    //      margin: 0 auto;
-    // }
     &__inner {
         display: flex;
         flex-wrap: wrap;
@@ -144,74 +94,17 @@ a.anchor {
     & .work {
         width: 400px;
 
-        // &__img {
-        //     box-shadow: inset 0 0 10px #888888;
-        //     border-radius: 10px;
-        // }
-
-        // & img {
-        //     position: relative;
-        //     z-index: -10;
-        // }
-
         &__text {
-            //margin-top: 10%;
             &--title {
                 font-size: 25px;
                 font-weight: 500;
-                //margin-bottom: 5%;
             }
             &--description {
                 font-size: 20px;
-                //margin-top: 10px 0;
             }
         }
     }
 }
-
-// .font-sm {
-//   font-size: 16px;
-// }
-// .font-md {
-//   font-size: 19px;
-// }
-// .font-lr {
-//   font-size: 23px;
-// }
-// .font-lg {
-//   font-size: 36px;
-// }
-// .mb-lg {
-//   margin-bottom: 150px !important;
-// }
-// .pb-lg {
-//   padding-bottom: 150px !important;
-// }
-
-// .popular {
-//   &__item {
-//     flex-basis: 25%;
-//   }
-
-//   &__img {
-//     height: 335px;
-//   }
-// }
-
-// .travel {
-//   &__img {
-//     height: 400px;
-//   }
-
-//   &__description {
-//     margin-bottom: 40px;
-//   }
-//   &__title {
-//     &::before {
-//       display: block;
-//     }
-//   }
-// }
 
 .footer {
     margin-top: 160px;
@@ -241,7 +134,3 @@ a.anchor {
         display: none;
     }
 }
-
-// .swiper-slide {
-//   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
-// }

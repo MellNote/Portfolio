@@ -3,10 +3,12 @@ $cSmokeWhite: #f9f9f9;
 $cSmokeWhiteFB: #fbfbfb;
 $cBlack: black;
 $cGray: #ccc;
-$cSubTitle: #535353;
+$cSubText: #111111;
+$cSubTitle: #888888;
 $cBgGray: #eaebe6;
 $cBlue: #2dd9fe;
 $cNavyBlue: #00a3d5;
+$cIconBlue: #112344;
 $contentMaxWidth: 1070px;
 $navHeight: 100px;
 
@@ -14,7 +16,7 @@ $dot-width: 20px;
 $dot-height: 20px;
 $dot-radius: $dot-width/2;
 
-$dot-color: $cBlack;
+$dot-color: $cIconBlue;
 $dot-bg-color: $dot-color;
 $dot-before-color: $dot-color;
 $dot-after-color: $dot-color;

@@ -19,7 +19,6 @@ class Main {
 
     _init() {
         new MobileMenu();
-        //this.hero = new HeroSlider(".swiper-container");
         Pace.on("done", this._paceDone.bind(this));
     }
 
@@ -35,21 +34,13 @@ class Main {
         }
     }
 
-    // _navAnimation(el, inview) {
+    // _sideAnimation(el, inview) {
     //     if (inview) {
-    //         this.header.classList.remove("triggered");
+    //         this.sides.forEach((side) => side.classList.add("inview"));
     //     } else {
-    //         this.header.classList.add("triggered");
+    //         this.sides.forEach((side) => side.classList.remove("inview"));
     //     }
     // }
-
-    _sideAnimation(el, inview) {
-        if (inview) {
-            this.sides.forEach((side) => side.classList.add("inview"));
-        } else {
-            this.sides.forEach((side) => side.classList.remove("inview"));
-        }
-    }
 
     _textAnimation(el, inview) {
         if (inview) {
@@ -58,13 +49,13 @@ class Main {
         }
     }
 
-    _toggleSlideAnimation(el, inview) {
-        if (inview) {
-            this.hero.start();
-        } else {
-            this.hero.stop();
-        }
-    }
+    // _toggleSlideAnimation(el, inview) {
+    //     if (inview) {
+    //         this.hero.start();
+    //     } else {
+    //         this.hero.stop();
+    //     }
+    // }
 
     _destroyObservers() {
         this.observers.forEach((ob) => {
@@ -77,11 +68,10 @@ class Main {
     }
 
     _scrollInit() {
-        //this.observers = new ScrollObserver(".nav-trigger", this._navAnimation.bind(this), { once: false });
-        this.observers = new ScrollObserver(".cover-slide", this._inviewAnimation);
+        //this.observers = new ScrollObserver(".cover-slide", this._inviewAnimation);
         this.observers = new ScrollObserver(".appear", this._inviewAnimation);
         this.observers = new ScrollObserver(".tween-animate-title", this._textAnimation, { rootMargin: "-200px 0px" });
-        this.observers = new ScrollObserver(".swiper-container", this._toggleSlideAnimation.bind(this), { once: false });
-        this.observers = new ScrollObserver("#main-content", this._sideAnimation.bind(this), { once: false, rootMargin: "-300px 0px" });
+        //this.observers = new ScrollObserver(".swiper-container", this._toggleSlideAnimation.bind(this), { once: false });
+        //this.observers = new ScrollObserver("#main-content", this._sideAnimation.bind(this), { once: false, rootMargin: "-300px 0px" });
     }
 }
